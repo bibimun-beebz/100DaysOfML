@@ -50,7 +50,7 @@ pca = PCA(n_components=4)
 pca.fit(iris.data)
 X = pca.transform(iris.data)
 labl = iris.target
-plt.bar(['sepal length', 'sepal width', 'petal length', 'petal width'], pca.explained_variance_ratio_, color='green')
+plt.bar(['PC1', 'PC2', 'PC3', 'PC4'], pca.explained_variance_ratio_, color='green')
 plt.show()
 
 def calcColour(label):
